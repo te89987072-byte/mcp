@@ -81,4 +81,4 @@ def increase_site_quota(site_url: str, amount_gb: int) -> str:
     return result
 
 if __name__ == "__main__":
-    mcp.run()
+    mcp.run(transport="http", port=8080)

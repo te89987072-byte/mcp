@@ -46,4 +46,4 @@ def generate_employment_letter(addressee: str) -> str:
     return f"Letter generated for {addressee}. Download available in your portal."
 
 if __name__ == "__main__":
-    mcp.run()
+    mcp.run(transport="http", port=8081)
